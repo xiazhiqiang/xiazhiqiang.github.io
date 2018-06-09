@@ -1,10 +1,10 @@
 # Site settings
-title: 志强的博客
-SEOTitle: 志强 | 志强的博客
+title: Zhiqiang Blog
+SEOTitle: Zhiqiang | Zhiqiang Blog
 header-img: img/post-bg-desk.jpg
 email: xiazhiqiangcuc@126.com
 description: "Every failure is leading towards success."
-keyword: "ZQ, ZQ Blog, 志强的博客, xiazhiqiang, 夏志强, Web, Node"
+keyword: "Zhiqiang, Zhiqiang Blog, 志强的博客, xiazhiqiang, 夏志强, Web, Node"
 url: "http://xiazhiqiang.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/xiazhiqiang/xiazhiqiang.github.io.git" # you code repository
