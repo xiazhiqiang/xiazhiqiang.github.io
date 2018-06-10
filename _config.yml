@@ -5,9 +5,9 @@ header-img: img/post-bg-desk.jpg
 email: xiazhiqiangcuc@126.com
 description: "Every failure is leading towards success."
 keyword: "Zhiqiang, Zhiqiang Blog, 志强的博客, xiazhiqiang, 夏志强, Web, Node"
-url: "http://xiazhiqiang.github.io"          # your host, for absolute URL
+url: "http://xiazhiqiang.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/xiazhiqiang/xiazhiqiang.github.io.git" # you code repository
+github_repo: "https://github.com/xiazhiqiang/xiazhiqiang.github.io.git/" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -61,12 +61,12 @@ kramdown:
 
 # Gitalk
 gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  enable: true    #是否开启Gitalk评论
+  clientID: ef9fd9184d77d93ff0a3                            #生成的clientID
+  clientSecret: 07e0653af857a12242721cad5cde0fcf0c9abdec    #生成的clientSecret
+  repo: xiazhiqiang.github.io    #仓库名称
+  owner: xiazhiqiang    #github用户名
+  admin: xiazhiqiang
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 

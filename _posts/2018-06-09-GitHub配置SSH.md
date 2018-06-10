@@ -4,7 +4,7 @@ title:      GitHub配置SSH
 subtitle:   Mac多个Git SSH配置
 date:       2018-06-09
 author:     Zhiqiang
-header-img: img/post-bg/post-bg-git-ssh.jpg
+header-img: img/post-bg/post-bg-git.jpg
 catalog: true
 tags:
     - Git
