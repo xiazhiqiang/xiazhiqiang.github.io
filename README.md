@@ -17,6 +17,12 @@ gem install jekyll
 jekyllserve
 ```
 
+## gitalk
+
+如果评论出现issue未创建，则需要手动创建
+- 新建issue，标题xxx - Zhiqiang | Zhiqiang Blog
+- issue添加label：Gitalk，encodeURIComponent(文章文件名不加后缀).substr(0, 50)
+
 ## 致谢
 
 1. 这个模板是从这里 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 感谢这个作者。 
