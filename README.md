@@ -11,10 +11,10 @@
 
 ```
 # 安装jekyll
-gem install jekyll
+gem install jekyll
 
 # 本地运行，http://127.0.0.1:4000打开
-jekyllserve
+jekyll serve
 ```
 
 ## gitalk
