@@ -9,6 +9,7 @@ catalog: true
 tags:
     - Git
     - SSH
+    - 2018
 ---
 
 ## 背景
@@ -131,3 +132,6 @@ Welcome to GitLab, XXXX!
 - [Git多账号处理](https://gist.github.com/suziewong/4378434)
 - [同一客户端下使用多个git账号](https://www.jianshu.com/p/89cb26e5c3e8)
 - [Mac下配置GitHub SSH](https://www.jianshu.com/p/24acb3d8cf28)
+- [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
+- [github操作从ssh转成https](https://molunerfinn.com/git-ssh2https/#%E4%BB%8Essh%E5%88%B0https)
+- [github操作从https转成ssh](https://blog.phpgao.com/github_https_to_ssh.html)

@@ -4,7 +4,24 @@
 > 
 > 更为详细的教程戳这 [《利用 GitHub Pages 快速搭建个人博客》](http://www.jianshu.com/p/e68fba58f75c) 或 [wiki](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B)
 > 
+
 ### [我的博客在这里 &rarr;](http://xiazhiqiang.github.io)
+
+## 本地调试
+
+```
+# 安装jekyll
+gem install jekyll
+
+# 本地运行，http://127.0.0.1:4000打开
+jekyll serve
+```
+
+## gitalk
+
+如果评论出现issue未创建，则需要手动创建
+- 新建issue，标题xxx - Zhiqiang | Zhiqiang Blog
+- issue添加label：Gitalk，encodeURIComponent(文章文件名不加后缀).substr(0, 50)
 
 ## 致谢
 
