@@ -1,4 +1,4 @@
-![](../img/bg/post-bg-java-study.png)
+![](../public/img/bg/post-bg-java-study.png)
 
 > 一天掌握 Java 基本概念和语法
 
@@ -16,7 +16,7 @@
 
 不同平台上安装了适合该平台的 JVM（Java 虚拟机）后，JVM 将 Java 编译后的.class 字节码文件，转换成对应平台的机器码运行。
 
-![java跨平台原理图](../img/content/java跨平台原理.png)
+![java跨平台原理图](../public/img/content/java跨平台原理.png)
 
 ### J2SE、J2EE、J2ME 区别
 
@@ -95,7 +95,7 @@ public class Main {
 
 在 Java 中，可以将完成某个功能的代码块定义为方法，将具有相似功能的方法定义在一个类中，也就是定义在一个源文件中（因为一个源文件只能包含一个公共的类），多个源文件可以位于一个文件夹，这个文件夹有特定的称呼，叫做包。
 
-![java项目组织结构](../img/content/java项目组织结构.png)
+![java项目组织结构](../public/img/content/java项目组织结构.png)
 
 ### Java 类库
 

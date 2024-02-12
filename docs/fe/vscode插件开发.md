@@ -1,3 +1,3 @@
 ```xmind preview
-./xmind/vscode插件.xmind
+./public/xmind/vscode插件.xmind
 ```

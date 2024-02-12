@@ -9,14 +9,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="dist/css/themes-vue.css" />
-    <link rel="stylesheet" href="dist/css/xmind1.0-index.min.css" />
+    <!-- <link rel="stylesheet" href="public/css/themes-vue.css" /> -->
+    <!-- <link rel="stylesheet" href="public/css/theme-simple-dark.css" /> -->
+    <link rel="stylesheet" href="public/css/theme-simple.css" />
+
+    <!-- xmind -->
+    <link rel="stylesheet" href="public/css/xmind1.0-index.min.css" />
   </head>
   <body>
     <div id="app">加载中，请稍后...</div>
 
     <!-- 每页显示在github上编辑 -->
-    <script src="dist/js/docsify-edit-on-github.js"></script>
+    <script src="public/js/docsify-edit-on-github.js"></script>
 
     <script>
       window.$docsify = {
@@ -56,6 +60,14 @@
           crossChapterText: true,
         },
 
+        tabs: {
+          persist: true, // default
+          sync: true, // default
+          theme: "classic", // default
+          tabComments: true, // default
+          tabHeadings: true, // default
+        },
+
         plugins: [
           EditOnGithubPlugin.create(
             "https://github.com/xiazhiqiang/xiazhiqiang.github.io/blob/master/docs/",
@@ -65,7 +77,7 @@
           function (hook) {
             var footer = [
               "<footer>",
-              '<span><a href="https://github.com/xiazhiqiang/xiazhiqiang.github.io">Miles</a> &copy;' +
+              '<span><a href="https://github.com/xiazhiqiang/xiazhiqiang.github.io" target="_blank">Miles</a> &copy;' +
                 new Date().getFullYear() +
                 ".</span>",
               "</footer>",
@@ -78,21 +90,25 @@
       };
     </script>
     <!-- Docsify v4 -->
-    <script src="dist/js/docsify@4.js"></script>
+    <script src="public/js/docsify@4.js"></script>
+    <!-- 主题 -->
+    <script src="public/js/docsify-themeable.min.js"></script>
+    <!-- tabs -->
+    <script src="public/js/docsify-tabs@1.js"></script>
     <!-- emoji插件 -->
-    <script src="dist/js/emoji.min.js"></script>
+    <script src="public/js/emoji.min.js"></script>
     <!-- 全文搜索 -->
-    <script src="dist/js/search.min.js"></script>
+    <script src="public/js/search.min.js"></script>
     <!-- 图片缩放 -->
-    <script src="dist/js/zoom-image.min.js"></script>
+    <script src="public/js/zoom-image.min.js"></script>
     <!-- 复制剪贴板 -->
-    <script src="dist/js/docsify-copy-code.min.js"></script>
+    <script src="public/js/docsify-copy-code.min.js"></script>
     <!-- 翻页 -->
-    <script src="dist/js/docsify-pagination.min.js"></script>
+    <script src="public/js/docsify-pagination.min.js"></script>
     <!-- xmind -->
-    <script src="dist/js/xmind1.0-index.min.js"></script>
+    <script src="public/js/xmind1.0-index.min.js"></script>
     <!-- markdown语言 -->
-    <script src="dist/js/prism-bash.min.js"></script>
-    <script src="dist/js/prism-java.min.js"></script>
+    <script src="public/js/prism-bash.min.js"></script>
+    <script src="public/js/prism-java.min.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-![](../img/bg/post-bg-git-ssh.jpg ":size=80%")
+![](../public/img/bg/post-bg-git-ssh.jpg)
 
 > mac 配置指南
 
