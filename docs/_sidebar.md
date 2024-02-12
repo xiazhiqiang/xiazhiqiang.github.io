@@ -1,2 +1,7 @@
-- [首页](/)
-- [快速入门](快速入门.md)
+<!-- docs/_sidebar.md -->
+
+<!-- - [首页](/)
+- 前端
+  - [发布 NPM](/fe/NPM发布)
+- 开发
+  - [GitHub 配置 SSH](/dev/GitHub配置SSH) -->
