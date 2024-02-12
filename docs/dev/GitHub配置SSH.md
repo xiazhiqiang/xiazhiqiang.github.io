@@ -1,4 +1,4 @@
-# GitHub 配置 SSH
+![](../img/bg/post-bg-git-ssh.jpg ":size=80%")
 
 > mac 配置指南
 
@@ -21,19 +21,19 @@
 
 取消 git user 全局配置，将 user 配置放到每个 repo 配置中，避免多个账号 remote pull push 遇到问题
 
-```
-1.取消global
+```sh
+# 1.取消global
 git config --global --unset user.name
 git config --global --unset user.email
 
-2.设置每个项目repo的自己的user.email
+# 2.设置每个项目repo的自己的user.email
 git config  user.email "xxxx@xx.com"
 git config  user.name "xxxx"
 ```
 
 ### 本地生成 ssh key
 
-```
+```sh
 ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
@@ -52,7 +52,7 @@ ssh-keygen -t rsa -C "xxx@xxx.com"
 
 https://github.com/ -> Your profile -> edit profile -> SSH and GPG keys -> new SSH key
 
-```
+```sh
 cat ~/.ssh/id_rsa_github1.pub
 ```
 
@@ -62,7 +62,7 @@ cat ~/.ssh/id_rsa_github1.pub
 
 本地运行
 
-```
+```sh
 ssh-add -K ~/.ssh/id_rsa_github1
 ```
 
@@ -74,13 +74,13 @@ ssh-add -K ~/.ssh/id_rsa_github1
 
 在 ~/.ssh 目录下新建一个 config 文件
 
-```
+```sh
 touch config
 ```
 
 添加多个 git ssh 配置
 
-```
+```text
 #github
 Host github
 HostName github.com
@@ -110,7 +110,7 @@ IdentityFile ~/.ssh/id_rsa_github3
 
 ### 验证是否成功连接
 
-```
+```sh
 # 下面是github的成功返回语句
 $ ssh -T git@github.com
 Hi XXXX! You've successfully authenticated, but GitHub does not provide shell access.

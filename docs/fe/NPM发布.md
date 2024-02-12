@@ -1,4 +1,4 @@
-# 发布 NPM
+![](../img/bg/post-bg-npm.png")
 
 ## 发布一个稳定版
 
