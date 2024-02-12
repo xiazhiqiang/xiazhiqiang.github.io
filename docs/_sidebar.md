@@ -1,6 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - 前端
+  - [vscode 插件开发](fe/vscode插件开发)
   - [发布 NPM](fe/NPM发布)
 - Java
   - [Java 入门](java/Java入门)
