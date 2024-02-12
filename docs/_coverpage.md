@@ -5,7 +5,7 @@
 # Miles WebSite
 
 [GitHub](https://github.com/xiazhiqiang/xiazhiqiang.github.io)
-[Get Start](/fe/NPM发布)
+[Get Started](/fe/NPM发布)
 
 ![](./img/bg/home-bg-o.jpg)
 
