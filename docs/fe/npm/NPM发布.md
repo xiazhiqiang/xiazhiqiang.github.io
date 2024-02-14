@@ -9,7 +9,7 @@ npm version 0.1.0
 npm publish
 ```
 
-发布稳定版后，通过`tnpm install moduleName`会自动安装最新版
+发布稳定版后，通过`npm install moduleName`会自动安装最新版
 
 ## 修改后发布一个稳定版
 

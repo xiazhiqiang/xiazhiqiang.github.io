@@ -30,10 +30,7 @@
         repo: "https://github.com/xiazhiqiang/xiazhiqiang.github.io",
         loadSidebar: true, // 开启侧边栏
         autoHeader: true,
-        subMaxLevel: 2, // 侧边栏目录层级
-        alias: {
-          "/.*/_sidebar.md": "/_sidebar.md",
-        },
+        subMaxLevel: "auto", // 侧边栏目录层级
         loadNavbar: true, // 导航栏配置
         mergeNavbar: true, // 小屏时合并导航栏到侧边栏
         coverpage: true, // 开启封面
@@ -45,6 +42,7 @@
         search: {
           paths: "auto",
           placeholder: "搜索",
+          noData: "找不到结果",
           depth: 4,
         },
 

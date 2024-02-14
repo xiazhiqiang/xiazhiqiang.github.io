@@ -2,7 +2,7 @@
 
 - 前端
   - NPM
-    - [发布 NPM](fe/NPM发布)
+    - [发布 NPM](fe/npm/NPM发布)
   - 网络/请求
     - [浏览器跨域](fe/network/cors)
   - 插件开发
