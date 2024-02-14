@@ -1,8 +1,13 @@
 <!-- docs/_sidebar.md -->
 
 - 前端
-  - [发布 NPM](fe/NPM发布)
-  - [vscode 插件开发](fe/vscode插件开发)
+  - NPM
+    - [发布 NPM](fe/NPM发布)
+  - 网络/请求
+    - [浏览器跨域](fe/network/cors)
+  - 插件开发
+    - [vscode 插件开发](fe/plugin-dev/vscode插件开发)
+    - [chrome 插件开发](fe/plugin-dev/chrome插件开发)
 - Java
   - [Java 入门](java/Java入门)
   - [Java 面向对象](java/Java面向对象)
