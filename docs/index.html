@@ -9,13 +9,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
+    <!-- theme -->
     <!-- <link rel="stylesheet" href="public/css/themes-vue.css" /> -->
     <!-- <link rel="stylesheet" href="public/css/theme-simple-dark.css" /> -->
     <link rel="stylesheet" href="public/css/theme-simple.css" />
-
+    <!-- 图表 -->
+    <link rel="stylesheet" href="public/css/docsify-charty.min.css" />
     <!-- xmind -->
     <link rel="stylesheet" href="public/css/xmind1.0-index.min.css" />
-
+    <!-- gitalk -->
     <link rel="stylesheet" href="public/css/gitalk.css" />
   </head>
   <body>
@@ -38,6 +40,11 @@
         auto2top: true, // 切换自动回到顶部
         loadFooter: true, // 开启footer
 
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+          "/.*/_navbar.md": "/_navbar.md",
+        },
+
         // 全文搜索配置
         search: {
           paths: "auto",
@@ -55,8 +62,8 @@
 
         // 翻页
         pagination: {
-          previousText: "上一章节",
-          nextText: "下一章节",
+          previousText: "上一篇",
+          nextText: "下一篇",
           crossChapter: true,
           crossChapterText: true,
         },
@@ -85,6 +92,41 @@
           whereToPlace: "top",
         },
 
+        // 公式
+        latex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ], // default
+          displayMath: [["$$", "$$"]], // default
+          customOptions: {}, // default
+        },
+
+        // 图表
+        charty: {
+          theme: "#EE5599",
+          mode: "light",
+          debug: false,
+        },
+
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              // drawio
+              if (lang === "drawio") {
+                if (window.drawioConverter) {
+                  console.log("drawio 转化中");
+                  return window.drawioConverter(code);
+                } else {
+                  return `<div class='drawio-code'>${code}</div>`;
+                }
+              } else {
+                return this.origin.code.apply(this, arguments);
+              }
+            },
+          },
+        },
+
         plugins: [
           EditOnGithubPlugin.create(
             "https://github.com/xiazhiqiang/xiazhiqiang.github.io/blob/master/docs/",
@@ -94,10 +136,13 @@
         ],
       };
     </script>
+
     <!-- Docsify v4 -->
     <script src="public/js/docsify@4.js"></script>
     <!-- 主题 -->
     <script src="public/js/docsify-themeable.min.js"></script>
+    <!-- 时间戳 -->
+    <script src="public/js/time-updater.min.js"></script>
     <!-- footer -->
     <script src="public/js/docsify-footer.min.js"></script>
     <!-- tabs -->
@@ -114,14 +159,33 @@
     <script src="public/js/docsify-pagination.min.js"></script>
     <!-- xmind -->
     <script src="public/js/xmind1.0-index.min.js"></script>
-    <!-- markdown语言 -->
-    <script src="public/js/prism-bash.min.js"></script>
-    <script src="public/js/prism-java.min.js"></script>
+    <!-- image caption -->
+    <script src="public/js/docsify-image-caption.min.js"></script>
+    <!-- pdf -->
+    <script src="public/js/pdfobject.min.js"></script>
+    <script src="public/js/docsify-pdf-embed.js"></script>
+    <!-- 图表 -->
+    <script src="public/js/docsify-charty.min.js"></script>
+    <!-- drawio -->
+    <script src="public/js/docsify-drawio-viewer.min.js"></script>
+    <script src="public/js/drawio.js"></script>
+    <!-- latex -->
+    <script src="public/js/tex-mml-chtml.js"></script>
+    <script src="public/js/docsify-latex@0.js"></script>
     <!-- gitalk -->
     <script src="public/js/docsify-plugin-gitalk.min.js"></script>
     <script src="public/js/gitalk.min.js"></script>
     <script src="public/js/docsify-gitalk.min.js"></script>
-    <!-- 时间戳 -->
-    <script src="public/js/time-updater.min.js"></script>
+    <!-- markdown语言 -->
+    <script src="public/js/prism-bash.min.js"></script>
+    <script src="public/js/prism-java.min.js"></script>
+    <script src="public/js/prism-json.min.js"></script>
+    <script src="public/js/prism-css.min.js"></script>
+    <script src="public/js/prism-less.min.js"></script>
+    <script src="public/js/prism-scss.min.js"></script>
+    <script src="public/js/prism-sass.min.js"></script>
+    <script src="public/js/prism-log.min.js"></script>
+    <script src="public/js/prism-markup.min.js"></script>
+    <script src="public/js/prism-typescript.min.js"></script>
   </body>
 </html>

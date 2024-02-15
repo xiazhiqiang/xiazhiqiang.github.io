@@ -5,6 +5,7 @@
     - [发布 NPM](fe/npm/NPM发布)
   - 网络/请求
     - [浏览器跨域](fe/network/cors)
+    - [网页视频](fe/network/video.md)
   - 插件开发
     - [vscode 插件开发](fe/plugin-dev/vscode插件开发)
     - [chrome 插件开发](fe/plugin-dev/chrome插件开发)
