@@ -6,10 +6,19 @@
 
 ## ffmpeg 安装
 
-todo
+- 访问 ffmpeg 官网，进入[下载页面](https://www.ffmpeg.org/download.html)
+  ![alt text](img/video1.png)
+- 选择需要的版本
+  ![alt text](img/video2.png)
+- 解压（也可添加到环境变量）
+  ![alt text](img/video3.png)
 
 ## ffmpeg 转换
 
 ```sh
-ffmpeg -i origin_video.mp4 -vcodec h264 output_video.mp4
+~/Downloads/ffmpeg -i input.mp4 -vcodec h264 output.mp4
 ```
+
+## 参考文档
+
+- https://blog.51cto.com/aiyc/5151109
