@@ -9,6 +9,11 @@
   - 插件开发
     - [vscode 插件开发](fe/plugin-dev/vscode插件开发)
     - [chrome 插件开发](fe/plugin-dev/chrome插件开发)
+- Python
+  - [python 环境](python/python环境)
+  - [python 基础](python/python基础)
+  - [poetry 使用](python/poetry使用)
+  - [gradio 使用](python/gradio使用)
 - Java
   - [Java 入门](java/Java入门)
   - [Java 面向对象](java/Java面向对象)
