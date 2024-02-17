@@ -12,3 +12,18 @@
 ```sh
 pip install gradio
 ```
+
+## 4 种类型接口
+
+- 标准 Demo：独立的输入和输出
+
+```python
+import gradio as gr
+
+def test(text):
+  return text
+
+demo = gr.Interface(fn=test, inputs=[gr.Text()], outputs=["text"])
+
+demo.launch()
+```
