@@ -109,17 +109,78 @@
           debug: false,
         },
 
+        // 字数统计
+        count: {
+          countable: true,
+          fontsize: "0.9em",
+          color: "rgb(90,90,90)",
+          language: "chinese",
+        },
+
         markdown: {
           renderer: {
             code: function (code, lang) {
+              var pdf_renderer = function (code, lang, verify) {
+                function unique_id_generator() {
+                  function rand_gen() {
+                    return Math.floor((Math.random() + 1) * 65536)
+                      .toString(16)
+                      .substring(1);
+                  }
+                  return (
+                    rand_gen() +
+                    rand_gen() +
+                    "-" +
+                    rand_gen() +
+                    "-" +
+                    rand_gen() +
+                    "-" +
+                    rand_gen() +
+                    "-" +
+                    rand_gen() +
+                    rand_gen() +
+                    rand_gen()
+                  );
+                }
+                var divId =
+                  "markdown_code_pdf_container_" +
+                  unique_id_generator().toString();
+                var container_list = new Array();
+                if (localStorage.getItem("pdf_container_list")) {
+                  container_list = JSON.parse(
+                    localStorage.getItem("pdf_container_list")
+                  );
+                }
+                container_list.push({ pdf_location: code, div_id: divId });
+                localStorage.setItem(
+                  "pdf_container_list",
+                  JSON.stringify(container_list)
+                );
+                return (
+                  '<div style="margin-top:' +
+                  PDF_MARGIN_TOP +
+                  "; margin-bottom:" +
+                  PDF_MARGIN_BOTTOM +
+                  ';" id="' +
+                  divId +
+                  '">' +
+                  '<a href="https://gitcode.com/lazypanda10117/docsify-pdf-embed/tree/master/' +
+                  code +
+                  '"> Link </a> to ' +
+                  code +
+                  "</div>"
+                );
+              };
+
               // drawio
               if (lang === "drawio") {
                 if (window.drawioConverter) {
-                  console.log("drawio 转化中");
                   return window.drawioConverter(code);
                 } else {
                   return `<div class='drawio-code'>${code}</div>`;
                 }
+              } else if (lang === "pdf") {
+                return pdf_renderer(code, lang, false);
               } else {
                 return this.origin.code.apply(this, arguments);
               }
@@ -149,6 +210,8 @@
     <script src="public/js/docsify-tabs@1.js"></script>
     <!-- emoji插件 -->
     <script src="public/js/emoji.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="public/js/countable.js"></script>
     <!-- 全文搜索 -->
     <script src="public/js/search.min.js"></script>
     <!-- 图片缩放 -->
@@ -172,10 +235,6 @@
     <!-- latex -->
     <script src="public/js/tex-mml-chtml.js"></script>
     <script src="public/js/docsify-latex@0.js"></script>
-    <!-- gitalk -->
-    <script src="public/js/docsify-plugin-gitalk.min.js"></script>
-    <script src="public/js/gitalk.min.js"></script>
-    <script src="public/js/docsify-gitalk.min.js"></script>
     <!-- markdown语言 -->
     <script src="public/js/prism-bash.min.js"></script>
     <script src="public/js/prism-java.min.js"></script>
@@ -187,5 +246,19 @@
     <script src="public/js/prism-log.min.js"></script>
     <script src="public/js/prism-markup.min.js"></script>
     <script src="public/js/prism-typescript.min.js"></script>
+    <!-- gitalk -->
+    <script src="public/js/docsify-plugin-gitalk.min.js"></script>
+    <script src="public/js/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: "ef9fd9184d77d93ff0a3",
+        clientSecret: "07e0653af857a12242721cad5cde0fcf0c9abdec",
+        repo: "xiazhiqiang.github.io",
+        owner: "xiazhiqiang",
+        admin: ["xiazhiqiang"],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      });
+    </script>
   </body>
 </html>

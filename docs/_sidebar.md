@@ -17,5 +17,7 @@
 - Java
   - [Java 入门](java/Java入门)
   - [Java 面向对象](java/Java面向对象)
+- AI
+  - [2023 人工智能前景及应用](ai/2023年人工智能.md)
 - 配置
   - [GitHub 配置 SSH](dev/GitHub配置SSH)

@@ -1,6 +1,8 @@
-## 是什么
+## poetry 是什么
 
 todo
+
+[官网->](https://python-poetry.org/docs/)
 
 ## 安装 pipx
 
