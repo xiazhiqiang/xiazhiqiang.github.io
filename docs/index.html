@@ -250,6 +250,17 @@
     <!-- gitalk -->
     <script src="public/js/docsify-plugin-gitalk.min.js"></script>
     <script src="public/js/gitalk.min.js"></script>
-    <script src="public/js/docsify-gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        id: "Miles WebSite",
+        clientID: "ef9fd9184d77d93ff0a3",
+        clientSecret: "07e0653af857a12242721cad5cde0fcf0c9abdec",
+        repo: "xiazhiqiang.github.io",
+        owner: "xiazhiqiang",
+        admin: ["xiazhiqiang"],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      });
+    </script>
   </body>
 </html>
