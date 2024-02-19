@@ -13,9 +13,26 @@
 pip install gradio
 ```
 
-## 4 种类型接口
+## 基本使用
 
-- 标准 Demo：独立的输入和输出
+```python
+import gradio as gr
+
+def greet(name, intensity):
+    return "Hello, " + name + "!" * int(intensity)
+
+demo = gr.Interface(
+    fn=greet,
+    inputs=["text", "slider"],
+    outputs=["text"],
+)
+
+demo.launch()
+```
+
+## 4 种类型界面
+
+- 标准界面（独立的输入和输出）
 
 ```python
 import gradio as gr
@@ -23,7 +40,50 @@ import gradio as gr
 def test(text):
   return text
 
-demo = gr.Interface(fn=test, inputs=[gr.Text()], outputs=["text"])
+demo = gr.Interface(fn=test, inputs=[gr.Text()], outputs=["text"], title="", description="")
+demo.launch()
+```
+
+- 只有输出
+
+```python
+import gradio as gr
+
+def test():
+  return 111
+
+demo = gr.Interface(fn=test, inputs=None, outputs=gr.Text(), title="", description="")
+demo.launch()
+```
+
+- 只有输入
+
+```python
+import gradio as gr
+
+def test():
+    print(f"Hello, world")
+
+demo = gr.Interface(fn=test, inputs=gr.Text(), outputs=None)
+demo.launch()
+```
+
+- 输入输出同一组件
+
+```python
+import gradio as gr
+
+
+def generate_text(text_prompt):
+  return text_prompt
+
+textbox = gr.Textbox()
+demo = gr.Interface(generate_text, textbox, textbox)
 
 demo.launch()
 ```
+
+## 界面状态
+
+界面状态用于交互时的操作状态，分为全局状态和会话状态。
+全局状态：方便被所有方法和用户所调用。
