@@ -4,21 +4,34 @@ todo
 
 [官网->](https://python-poetry.org/docs/)
 
-## 安装 pipx
-
-[安装指南](https://pipx.pypa.io/stable/)
-
-```sh
-brew install pipx
-pipx ensurepath
-```
-
 ## 安装 poetry
 
-[安装指南](https://python-poetry.org/docs/)
+- 安装（需要 python3）
 
 ```sh
-pipx install poetry
+curl -sSLk https://install.python-poetry.org | python3 -
+```
+
+- 配置环境变量
+
+```sh
+vi ~/.zshrc_profile
+source ~/.zshrc_profile
+```
+
+```text
+# poetry
+export PATH="/Users/xxx/.local/bin:$PATH"
+```
+
+```sh
+source ~/.zshrc_profile
+```
+
+- 验证 poetry 版本
+
+```sh
+poetry --version
 ```
 
 ## 初始化工程
