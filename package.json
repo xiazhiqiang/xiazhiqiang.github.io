@@ -4,7 +4,8 @@
   "description": "site",
   "author": "Miles <xiazhiqiangcuc@126.com>",
   "scripts": {
-    "dev": "docsify serve docs"
+    "dev": "docsify serve docs",
+    "start": "docsify serve docs"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.3",
