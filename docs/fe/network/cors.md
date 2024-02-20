@@ -1,1 +1,1 @@
-> 跨域知多少
+[fetch cors](https://zh.javascript.info/fetch-crossorigin)
