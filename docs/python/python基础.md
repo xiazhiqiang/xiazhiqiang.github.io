@@ -65,6 +65,15 @@
 - range(number)函数生成从 0 开始的 number 个数字序列。list()函数可以将变量转换成 list 类型。
 - break 语句可以在循环过程中直接退出循环，而 continue 语句可以提前结束本轮循环，并直接开始下一轮循环。
 
+## with 语句
+
+[深入理解 with 语句](https://www.biaodianfu.com/python-with.html)
+
+```python
+with expression [as variable]:
+    with-block
+```
+
 ## 字典 dict
 
 - python 中的字典类似于 JavaScript 中的对象，通过 dict = { "a": 1, "b": 2}
