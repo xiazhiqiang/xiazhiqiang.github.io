@@ -1,4 +1,4 @@
-![](../public/img//bg/post-bg-npm.png")
+![](img/post-bg-npm.png")
 
 ## 发布一个稳定版
 

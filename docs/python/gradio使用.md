@@ -87,3 +87,41 @@ demo.launch()
 
 界面状态用于交互时的操作状态，分为全局状态和会话状态。
 全局状态：方便被所有方法和用户所调用。
+局部状态：
+
+## 响应界面
+
+> [快捷访问 →](https://www.gradio.app/guides/reactive-interfaces)
+
+- 实时界面，通过 gr.Interface 方法传入 live=True，即可根据输入试试计算输出
+
+```python
+import gradio as gr
+
+def calculator(num1, operation, num2):
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        return num1 / num2
+
+demo = gr.Interface(
+    calculator,
+    [
+        "number",
+        gr.Radio(["add", "subtract", "multiply", "divide"]),
+        "number"
+    ],
+    "number",
+    live=True,
+)
+demo.launch()
+```
+
+- 流式组件
+
+gr.Audio(source='microphone') 和 gr.Audio(source='microphone', Streaming=True) 之间的区别：
+**当两者都在 gr.Interface(live=True) 中使用时，第一个组件会自动当用户停止录制时提交数据并运行接口函数，而第二个组件将在录制过程中不断发送数据并运行接口函数。**

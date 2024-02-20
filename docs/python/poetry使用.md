@@ -9,6 +9,9 @@ todo
 - 安装（需要 python3）
 
 ```sh
+curl -sSL https://install.python-poetry.org | python3 -
+
+# 若出现curl: (60) SSL certificate problem: certificate has expired
 curl -sSLk https://install.python-poetry.org | python3 -
 ```
 
