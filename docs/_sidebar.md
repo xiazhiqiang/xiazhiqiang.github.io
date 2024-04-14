@@ -17,13 +17,13 @@
   - [Java入门](java/Java入门.md)
   - [Java面向对象](java/Java面向对象.md)
 - mac
-  - anaconda
-    - [初始化](mac/anaconda/初始化.md)
   - docker
     - [初始化](mac/docker/初始化.md)
   - llm
   - mysql
     - [初始化](mac/mysql/初始化.md)
+  - python
+    - [初始化](mac/python/初始化.md)
 - python
   - [gradio使用](python/gradio使用.md)
   - [poetry使用](python/poetry使用.md)
