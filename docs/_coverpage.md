@@ -5,4 +5,4 @@
 # Miles WebSite
 
 [GitHub](https://github.com/xiazhiqiang/xiazhiqiang.github.io)
-[Get Started](fe/npm/NPM发布)
+[Get Started](/)
