@@ -35,8 +35,8 @@
         subMaxLevel: "auto", // 侧边栏目录层级
         loadNavbar: true, // 导航栏配置
         mergeNavbar: true, // 小屏时合并导航栏到侧边栏
-        coverpage: true, // 开启封面
-        onlyCover: true, // 只有封面
+        coverpage: false, // 开启封面
+        onlyCover: false, // 只有封面
         auto2top: true, // 切换自动回到顶部
         loadFooter: true, // 开启footer
 
@@ -89,7 +89,7 @@
         timeUpdater: {
           text: "<div align='left'>最后更新时间: {docsify-updated}</div>",
           formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}",
-          whereToPlace: "top",
+          whereToPlace: "bottom", // top
         },
 
         // 公式

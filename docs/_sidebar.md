@@ -1,23 +1,31 @@
-<!-- docs/_sidebar.md -->
-
-- [前端](fe/fe.md)
-  - NPM
-    - [发布 NPM](fe/npm/NPM发布)
-  - 网络/请求
-    - [浏览器跨域](fe/network/cors)
-    - [网页视频](fe/network/video.md)
-  - 插件开发
-    - [vscode 插件开发](fe/plugin-dev/vscode插件开发)
-    - [chrome 插件开发](fe/plugin-dev/chrome插件开发)
-- Python
-  - [python 环境](python/python环境)
-  - [python 基础](python/python基础)
-  - [poetry 使用](python/poetry使用)
-  - [gradio 使用](python/gradio使用)
-- Java
-  - [Java 入门](java/Java入门)
-  - [Java 面向对象](java/Java面向对象)
-- AI
-  - [2023 人工智能前景及应用](ai/2023年人工智能.md)
-- 配置
-  - [GitHub 配置 SSH](dev/GitHub配置SSH)
+- ai
+  - [2023年人工智能](ai/2023年人工智能.md)
+- dev
+  - [GitHub配置SSH](dev/GitHub配置SSH.md)
+- fe
+  - [fe](fe/fe.md)
+  - network
+    - [cors](fe/network/cors.md)
+  - npm
+    - [NPM发布](fe/npm/NPM发布.md)
+  - plugin-dev
+    - [chrome插件开发](fe/plugin-dev/chrome插件开发.md)
+    - [vscode插件开发](fe/plugin-dev/vscode插件开发.md)
+  - security
+    - [rsa](fe/security/rsa.md)
+- java
+  - [Java入门](java/Java入门.md)
+  - [Java面向对象](java/Java面向对象.md)
+- mac
+  - docker
+    - [初始化](mac/docker/初始化.md)
+  - llm
+  - mysql
+    - [初始化](mac/mysql/初始化.md)
+  - python
+    - [初始化](mac/python/初始化.md)
+- python
+  - [gradio使用](python/gradio使用.md)
+  - [poetry使用](python/poetry使用.md)
+  - [python基础](python/python基础.md)
+  - [python环境](python/python环境.md)

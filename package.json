@@ -5,11 +5,14 @@
   "author": "Miles <xiazhiqiangcuc@126.com>",
   "scripts": {
     "dev": "docsify serve docs",
-    "start": "docsify serve docs"
+    "start": "docsify serve docs",
+    "genSidebar": "node sidebar.js"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.3",
     "docsify-cli": "^4.4.4",
+    "fs-extra": "^11.2.0",
+    "minimatch": "^9.0.4",
     "y18n": "^5.0.8"
   },
   "engines": {
